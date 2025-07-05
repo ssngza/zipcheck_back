@@ -1,0 +1,8 @@
+Flask==3.0.3
+PyMuPDF==1.26.1
+flask_cors
+bcrypt
+PyJWT
+flask-restx
+openai
+python-dotenv

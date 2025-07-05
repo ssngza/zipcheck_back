@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.env
+.venv
+.coverage
+htmlcov/
+.pytest_cache/
+
+# PDF 파싱 관련 출력물
+output.txt
+images_output/
+temp/
+
+# 로그 파일
+*.log
+
+# IDE 설정
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS 관련 파일
+.DS_Store
+Thumbs.db
+
+# 개인 설정 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 빌드 파일
+dist/
+build/
+*.egg-info/ 

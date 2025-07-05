@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./temp:/app/temp
+      - ./images_output:/app/images_output
+    environment:
+      - DEBUG=False
+      - PORT=5000
+      - MAX_CONTENT_LENGTH=16777216 # 16MB
+    restart: unless-stopped
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    external: true
+    name: zipcheck_front_app_network
